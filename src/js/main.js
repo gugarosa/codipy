@@ -5,8 +5,7 @@ lang.init({
     defaultLang: 'en'
 });
 
-// Agency Theme JavaScript
-
+// Scrolling function
 (function($) {
     "use strict"; // Start of use strict
 
@@ -37,4 +36,4 @@ lang.init({
         }
     })
 
-})(jQuery); // End of use strict
+})(jQuery);
