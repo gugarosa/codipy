@@ -1,3 +1,120 @@
 body {
-    padding-top: 100px;
+    padding-top: 200px;
+}
+
+
+/* Portable screen navigation bar */
+
+.navbar-custom {
+    background-color: $main-paletton;
+    .navbar-brand {
+        color: #ffffff;
+        &:hover,
+        &:focus,
+        &:active,
+        &.active {
+            color: $darker-paletton;
+        }
+    }
+    .navbar-collapse {
+        border-color: rgba(255, 255, 255, 0.02);
+    }
+    .navbar-toggle {
+        background-color: $darker-paletton;
+        border-color: $darker-paletton;
+        &:hover,
+        &:focus {
+            background-color: $darker-paletton;
+        }
+        .icon-bar {
+            background-color: rgba(255, 255, 255, 0.9);
+        }
+    }
+    .nav {
+        li {
+            a {
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                color: #ffffff;
+                &:hover,
+                &:focus {
+                    color: $darker-paletton;
+                }
+            }
+        }
+    }
+    .navbar-nav {
+        .active {
+            a {
+                border-radius: 0;
+                color: #ffffff;
+                background-color: $dark-paletton;
+                &:hover,
+                &:focus {
+                    color: #ffffff;
+                    background-color: $darker-paletton;
+                }
+            }
+        }
+    }
+}
+
+
+/* Main screen navigation bar */
+
+@media (min-width: 768px) {
+    .navbar-custom {
+        background-color: transparent;
+        padding: 25px 0;
+        -webkit-transition: padding 0.3s;
+        -moz-transition: padding 0.3s;
+        transition: padding 0.3s;
+        border: none;
+        .navbar-brand {
+            font-size: 28px;
+            -webkit-transition: all 0.5s;
+            -moz-transition: all 0.5s;
+            transition: all 0.5s;
+        }
+        .navbar-nav>.active>a {
+            border-radius: 5px;
+        }
+    }
+    .navbar-custom.affix {
+        background-color: $main-paletton;
+        padding: 5px;
+        .navbar-brand {
+            font-size: 20px;
+        }
+    }
+}
+
+
+/* Footer */
+
+footer {
+    margin-top: 10px;
+    padding: 10px 0px;
+    text-align: center;
+    span.copyright {
+        line-height: 25px;
+    }
+    /* Social media icons */
+    .social-media {
+        li {
+            font-size: 14px;
+            a {
+                color: $main-paletton;
+                font-size: 20px;
+                -webkit-transition: all 0.3s;
+                -moz-transition: all 0.3s;
+                transition: all 0.3s;
+                &:hover,
+                &:focus,
+                &:active {
+                    color: $dark-paletton;
+                }
+            }
+        }
+    }
 }
