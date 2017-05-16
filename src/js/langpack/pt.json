@@ -1,5 +1,9 @@
 {
     "token": {
-        "About Us": "Empresa"
+        "About Us": "Empresa",
+        "Portfolio": "Portfólio",
+        "Team": "Equipe",
+        "Contact": "Contato",
+        "A technology-based combination of daily problems and innovative solutions.": "Uma combinação tecnológica entre ideias inovadoras e problemas diários."
     }
 }
