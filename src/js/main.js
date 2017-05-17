@@ -44,6 +44,11 @@ lang.init({
             $('.navbar-toggle:visible').click();
     });
 
+    // Closes the Responsive Menu on Logo Click
+     $('.navbar-header a').click(function(){ 
+            $('.navbar-collapse').collapse('hide');
+    });
+
     // Offset for Main Navigation
     $('#main-nav').affix({
         offset: {

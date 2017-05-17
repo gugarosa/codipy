@@ -90,6 +90,29 @@ body {
 }
 
 
+/* Section backgrounds */
+
+.bg-light {
+    background-color: #f5f5f5;
+}
+
+
+/* Team section */
+
+.team-individual {
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    img {
+        border: 5px solid #f5f5f5;
+        margin: 0 auto;
+    }
+    h4 {
+        margin-top: 25px;
+    }
+}
+
+
 /* Footer */
 
 footer {
@@ -97,23 +120,29 @@ footer {
     padding: 10px 0px;
     text-align: center;
     span.copyright {
-        line-height: 25px;
+        line-height: 40px;
     }
-    /* Social media icons */
-    .social-media {
-        li {
-            font-size: 14px;
-            a {
-                color: $main-paletton;
-                font-size: 20px;
-                -webkit-transition: all 0.3s;
-                -moz-transition: all 0.3s;
-                transition: all 0.3s;
-                &:hover,
-                &:focus,
-                &:active {
-                    color: $dark-paletton;
-                }
+    span.email {
+        line-height: 40px;
+    }
+}
+
+
+/* Social media icons */
+
+.social-media {
+    li {
+        font-size: 14px;
+        a {
+            color: $main-paletton;
+            font-size: 20px;
+            -webkit-transition: all 0.5s;
+            -moz-transition: all 0.5s;
+            transition: all 0.5s;
+            &:hover,
+            &:focus,
+            &:active {
+                color: $dark-paletton;
             }
         }
     }
