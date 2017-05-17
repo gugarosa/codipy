@@ -23,6 +23,8 @@ gulp.task('copy', function () {
     .pipe(gulp.dest('dist/flags'))
   gulp.src('src/js/langpack/*')
     .pipe(gulp.dest('dist/js/langpack'));
+  gulp.src('src/php/*')
+    .pipe(gulp.dest('dist/php'));
 });
 
 gulp.task('sass', function () {
