@@ -7,10 +7,12 @@ body {
 
 /* Text decorators */
 
-h1,
 h2 {
     text-transform: uppercase;
     color: $dark-paletton;
+}
+
+h5 {
     margin-bottom: 50px;
 }
 
@@ -254,6 +256,34 @@ header {
                 line-height: 75px;
                 margin-bottom: 100px;
             }
+        }
+    }
+}
+
+
+/* Portfolio section */
+
+.portfolio-item {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    .hover {
+        background: rgba($main-paletton, 0.75);
+        opacity: 0;
+        transition: all ease 0.5s;
+        -webkit-transition: all ease 0.5s;
+        -moz-transition: all ease 0.5s;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        &:hover {
+            opacity: 1;
+        }
+        .content {
+            position: absolute;
+            width: 100%;
+            top: 45%;
+            color: #ffffff;
         }
     }
 }
