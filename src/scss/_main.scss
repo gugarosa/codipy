@@ -1,9 +1,41 @@
 body {
-    padding-top: 200px;
+    overflow-x: hidden;
+}
+
+
+/* Text decorators */
+
+h1,
+h2 {
+    text-transform: uppercase;
+    color: $dark-paletton;
+    margin-bottom: 50px;
+}
+
+
+/* Social media icons */
+
+.social-media {
+    li {
+        font-size: 14px;
+        a {
+            color: $main-paletton;
+            font-size: 20px;
+            -webkit-transition: all 0.5s;
+            -moz-transition: all 0.5s;
+            transition: all 0.5s;
+            &:hover,
+            &:focus,
+            &:active {
+                color: $dark-paletton;
+            }
+        }
+    }
 }
 
 
 /* Portable screen navigation bar */
+
 
 .navbar-custom {
     background-color: $main-paletton;
@@ -97,12 +129,74 @@ body {
 }
 
 
+/* All sections */
+
+section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+
+/* Header section */
+
+header {
+    background-image: url('../img/header-bg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    text-align: center;
+    color: white;
+    .intro {
+        padding-top: 150px;
+        padding-bottom: 100px;
+        .intro-head {
+            text-transform: uppercase;
+            font-size: 30px;
+            line-height: 20px;
+            margin-bottom: 20px;
+        }
+        .intro-p {
+            font-size: 20px;
+            line-height: 50px;
+            margin-bottom: 75px;
+        }
+        a {
+            color: #ffffff;
+            -webkit-transition: all 0.5s;
+            -moz-transition: all 0.5s;
+            transition: all 0.5s;
+            &:hover,
+            &:focus,
+            &:active {
+                color: $dark-paletton;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    header {
+        .intro {
+            padding-top: 300px;
+            padding-bottom: 200px;
+            .intro-p {
+                line-height: 75px;
+                margin-bottom: 100px;
+            }
+        }
+    }
+}
+
+
 /* Team section */
 
 .team-individual {
     text-align: center;
     margin-bottom: 50px;
-    margin-top: 50px;
     img {
         border: 5px solid #f5f5f5;
         margin: 0 auto;
@@ -124,26 +218,5 @@ footer {
     }
     span.email {
         line-height: 40px;
-    }
-}
-
-
-/* Social media icons */
-
-.social-media {
-    li {
-        font-size: 14px;
-        a {
-            color: $main-paletton;
-            font-size: 20px;
-            -webkit-transition: all 0.5s;
-            -moz-transition: all 0.5s;
-            transition: all 0.5s;
-            &:hover,
-            &:focus,
-            &:active {
-                color: $dark-paletton;
-            }
-        }
     }
 }

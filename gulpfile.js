@@ -25,6 +25,8 @@ gulp.task('copy', function () {
     .pipe(gulp.dest('dist/js/langpack'));
   gulp.src('src/php/*')
     .pipe(gulp.dest('dist/php'));
+  gulp.src('src/img/**')
+    .pipe(gulp.dest('dist/img'));
 });
 
 gulp.task('sass', function () {
