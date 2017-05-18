@@ -1,3 +1,5 @@
+/* Body overflowing background image */
+
 body {
     overflow-x: hidden;
 }
@@ -34,13 +36,28 @@ h2 {
 }
 
 
-/* Portable screen navigation bar */
+/* Container fix for 960px width viewport */
 
+@media (width: 960px) {
+    .container {
+        width: 900px;
+    }
+}
+
+
+/* Portable screen navigation bar */
 
 .navbar-custom {
     background-color: $main-paletton;
+    img {
+        width: 10%;
+        position: inherit;
+        float: left;
+        margin: 9px;
+    }
     .navbar-brand {
         color: #ffffff;
+        padding: 15px 0px;
         &:hover,
         &:focus,
         &:active,
@@ -92,6 +109,42 @@ h2 {
 }
 
 
+/* Logo fixes for custom widths */
+
+@media (min-width: 300px) and (max-width: 349px) {
+    .navbar-custom {
+        img {
+            width: 8%;
+            position: inherit;
+            float: left;
+            margin: 13px;
+        }
+    }
+}
+
+@media (min-width: 350px) and (max-width: 400px) {
+    .navbar-custom {
+        img {
+            width: 8%;
+            position: inherit;
+            float: left;
+            margin: 10px;
+        }
+    }
+}
+
+@media (min-width: 401px) and (max-width: 640px) {
+    .navbar-custom {
+        img {
+            width: 8%;
+            position: inherit;
+            float: left;
+            margin: 8px;
+        }
+    }
+}
+
+
 /* Main screen navigation bar */
 
 @media (min-width: 768px) {
@@ -102,7 +155,17 @@ h2 {
         -moz-transition: padding 0.3s;
         transition: padding 0.3s;
         border: none;
+        img {
+            width: 12%;
+            position: inherit;
+            float: left;
+            margin-top: 3px;
+            -webkit-transition: all 0.5s;
+            -moz-transition: all 0.5s;
+            transition: all 0.5s;
+        }
         .navbar-brand {
+            padding: 15px 15px;
             font-size: 28px;
             -webkit-transition: all 0.5s;
             -moz-transition: all 0.5s;
@@ -115,6 +178,10 @@ h2 {
     .navbar-custom.affix {
         background-color: $main-paletton;
         padding: 5px;
+        img {
+            width: 10%;
+            margin-top: 7px;
+        }
         .navbar-brand {
             font-size: 20px;
         }
